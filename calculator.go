@@ -13,7 +13,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 		"<form>" +
 		"a=<input type='text' name='a'><br>" +
 		"b=<input type='text' name='b'> <br> " +
-		"<input type='submit'> nimadur " +
+		"<input type='submit'> " +
 		"</form>"
 	header := "<html>"
 	footer := "</html>"
