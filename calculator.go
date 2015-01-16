@@ -21,7 +21,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 	a := []int{r.URL.Query().Get("a")}
 	b := r.URL.Query().Get("b")
 	c := a + b
-	result := "Salom  <b>" + name + "</b> " + secNa + " <br> a+b=" + c + " <br>" + inputTypes
+	result := "Salom DEMO <b>" + name + "</b> " + secNa + " <br> a+b=" + c + " <br>" + inputTypes
 	io.WriteString(w, header+result+footer)
 
 }
