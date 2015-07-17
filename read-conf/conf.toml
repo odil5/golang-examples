@@ -1,0 +1,7 @@
+[FIRST_SOME_PARM]
+	USER = 'admin'
+	PASW = '123'
+
+[SECOND_SOME_PARM]
+	LOGIN	=	'root'
+	PASS	=	'123'
