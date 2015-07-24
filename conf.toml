@@ -1,5 +1,6 @@
 [MYSQL]
-	dsn = 'root:root@tcp(localhost:3306)/maxtrack'
+	DSN = 'root:@tcp(localhost:3306)/test'
+	allowOldPasswords = 1
 [POSTGRE]
-	login1 = 'root1'
-	passw1 =	'123456'
+	login1 = 'root'
+	passw1 =	'root'

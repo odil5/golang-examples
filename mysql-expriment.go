@@ -52,7 +52,7 @@ func main() {
 		panic(err)
 	}
 
-	rows, err := db.Query("select `id`, `login` from users")
+	rows, err := db.Query("SELECT `id`, `login` FROM `max_users`")
 	if err != nil{
 		panic(err)
 	}
