@@ -14,6 +14,7 @@ func main() {
 		Access []string
 
 	}
+
 	user := User{
 		Id:     1,
 		Name:   "Kolo",
@@ -26,4 +27,10 @@ func main() {
 		fmt.Println("error:", err)
 	}
 	os.Stdout.Write(b)
+
+	str := `{"page": 1, "fruits": ["apple", "peach"]}`
+    res := &Response2{}
+    json.Unmarshal([]byte(str), &res)
+    fmt.Println(res)
+    fmt.Println(res)
 }
