@@ -52,22 +52,39 @@ func main() {
 		panic(err)
 	}
 
-	rows, err := db.Query("select `id`, `login` from max_users")
+	rows, err := db.Query("select `id` from max_units")
 	if err != nil{
 		panic(err)
 	}
 	defer rows.Close()
 
-	var ids = make(map[int]string)
+	//var ids = make(map[int]int)
 	for rows.Next() {
 		var id int
-		var login string
+		fmt.Println(id)
 
-		rows.Scan(&id, &login)
-		ids[id] = login
+		rows.Scan(&id)
+	//	ids[id] = id
 	}
 	
-	fmt.Println(ids)
+	
 
+
+
+//fmt.Println(app.MYSQL.Login)
+	
+/*
+	a:=1;
+	b:=8
+
+	if a > b {
+		fmt.Println(" 1 ")
+	}else{
+		fmt.Println(" 0 ")
+	}
+
+
+	fmt.Println(shouldEscape('?'))
+*/
 
 }

@@ -11,7 +11,7 @@ func main() {
 	f2 := "Demo 2 Message"
 	fmt.Println(f1)
 
-	d := demoMyFunc(1,1,1);
+	d := demoMyFunc(234,45,990);
 
 	fmt.Println(d)
 	
